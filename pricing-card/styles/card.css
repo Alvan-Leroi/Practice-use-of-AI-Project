@@ -1,0 +1,50 @@
+.pricing {
+  width: 300px;
+  background-color: #fff;
+  box-shadow: 0 0 10px #ccc;
+  padding: 10px;
+  text-align: left;
+}
+
+.title {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.price {
+  font-size: 18px;
+  color: green;
+}
+
+.features {
+  list-style: none;
+  padding-left: 0;
+}
+
+.features li {
+  padding: 4px;
+  border-bottom: 1px solid #eee;
+}
+
+.btn {
+  background: blue;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  margin-top: 10px;
+  display: block;
+  width: 100%;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: darkblue;
+}
+
+.card-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+  padding: 24px;
+}

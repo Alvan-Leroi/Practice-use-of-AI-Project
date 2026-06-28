@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pricing Cards</title>
+    <link rel="stylesheet" href="styles/card.css" />
+  </head>
+  <body>
+    <div id="pricing-grid" class="card-grid"></div>
+
+    <script type="module">
+      import { renderCards } from "./js/card.js";
+
+      renderCards(document.getElementById("pricing-grid"), [
+        {
+          title: "Basic Plan",
+          price: "$9.99 /month",
+          features: ["1 GB Storage", "Basic Support", "All Core Features"],
+          onClick: () => alert("Starting Basic trial"),
+        },
+        {
+          title: "Pro Plan",
+          price: "$19.99 /month",
+          features: ["10 GB Storage", "Priority Support", "All Core Features", "Analytics"],
+          buttonText: "Upgrade Now",
+          onClick: () => alert("Starting Pro trial"),
+        },
+      ]);
+    </script>
+  </body>
+</html>
