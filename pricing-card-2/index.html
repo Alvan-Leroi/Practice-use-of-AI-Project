@@ -4,14 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pricing Cards</title>
+    <!-- Shared styles for Card() output -->
     <link rel="stylesheet" href="styles/card.css" />
   </head>
   <body>
+    <!-- Cards are injected here by renderCards() -->
     <div id="pricing-grid" class="card-grid"></div>
 
     <script type="module">
       import { renderCards } from "./js/card.js";
 
+      // Demo data — each object becomes one pricing card
       renderCards(document.getElementById("pricing-grid"), [
         {
           title: "Basic Plan",

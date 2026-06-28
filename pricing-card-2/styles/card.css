@@ -1,3 +1,9 @@
+/* Pricing card styles — class names match those set in js/card.js */
+
+/* --------------------------------------------------------------------------
+   Card container
+   Wraps the whole pricing card: width, shadow, padding, and alignment.
+   -------------------------------------------------------------------------- */
 .pricing {
   width: 300px;
   background-color: #fff;
@@ -6,26 +12,43 @@
   text-align: left;
 }
 
+/* --------------------------------------------------------------------------
+   Plan title
+   Large, bold heading shown at the top of each card.
+   -------------------------------------------------------------------------- */
 .title {
   font-size: 22px;
   font-weight: bold;
 }
 
+/* --------------------------------------------------------------------------
+   Price label
+   Displays the monthly (or other) price in green below the title.
+   -------------------------------------------------------------------------- */
 .price {
   font-size: 18px;
   color: green;
 }
 
+/* --------------------------------------------------------------------------
+   Feature list
+   Unstyled list of plan benefits; each row gets a light bottom border.
+   -------------------------------------------------------------------------- */
 .features {
   list-style: none;
   padding-left: 0;
 }
 
+/* Individual feature row — subtle divider between items */
 .features li {
   padding: 4px;
   border-bottom: 1px solid #eee;
 }
 
+/* --------------------------------------------------------------------------
+   Call-to-action button
+   Full-width button at the bottom of the card; darkens on hover.
+   -------------------------------------------------------------------------- */
 .btn {
   background: blue;
   color: white;
@@ -41,6 +64,10 @@
   background: darkblue;
 }
 
+/* --------------------------------------------------------------------------
+   Card grid layout
+   Flex container used on the demo page to show multiple cards side by side.
+   -------------------------------------------------------------------------- */
 .card-grid {
   display: flex;
   flex-wrap: wrap;
